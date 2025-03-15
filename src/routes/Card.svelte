@@ -1,7 +1,13 @@
 <script lang="ts">
-	let { children } = $props();
+	let { children, padding = true } = $props();
 </script>
 
-<div class="rounded px-8 py-8 shadow">
-	{@render children()}
-</div>
+{#if padding}
+	<div class="rounded-md bg-white px-8 py-8 shadow-md">
+		{@render children()}
+	</div>
+{:else}
+	<div class="rounded-md bg-white shadow-md">
+		{@render children()}
+	</div>
+{/if}
