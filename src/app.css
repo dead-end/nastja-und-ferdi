@@ -1,9 +1,18 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
-
+*/
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 @theme {
+	/*
 	--font-roboto: 'Delius', sans-serif;
+    */
+}
+
+@layer components {
+	._button {
+		@apply rounded bg-blue-600 px-4 py-2 text-sm font-bold text-white shadow transition duration-200 ease-in-out hover:bg-blue-700 disabled:bg-gray-400;
+	}
 }
