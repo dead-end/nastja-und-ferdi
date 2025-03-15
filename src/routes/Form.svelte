@@ -26,9 +26,6 @@
 	<Input id="anzahl" label="Personenzahl" type="number" />
 
 	<div>
-		<button
-			class="rounded bg-blue-600 px-4 py-2 text-sm font-bold text-white shadow transition duration-200 ease-in-out hover:bg-blue-700 disabled:bg-gray-400"
-			>Submit</button
-		>
+		<button class="_button">Submit</button>
 	</div>
 </form>

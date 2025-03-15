@@ -3,9 +3,10 @@
 	import Form from './Form.svelte';
 
 	import img from '$lib/images/image.jpg';
+	import Location from './Location.svelte';
 </script>
 
-<main class="font-roboto bg-radial from-blue-100 from-40% to-blue-400">
+<main class="bg-radial from-blue-100 from-40% to-blue-400 text-gray-800">
 	<div class="container m-auto flex w-full flex-col justify-around gap-8 py-8 lg:w-1/2">
 		<Card padding={false}>
 			<div class="bg-gradient relative h-[400px] overflow-hidden rounded-md">
@@ -16,6 +17,9 @@
 					<div class="text-lg font-bold">Wir haben uns getraut.</div>
 				</div>
 			</div>
+		</Card>
+		<Card>
+			<Location />
 		</Card>
 		<Card>
 			<Form />
