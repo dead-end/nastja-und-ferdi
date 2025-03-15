@@ -1,2 +1,10 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import Card from './Card.svelte';
+	import Form from './Form.svelte';
+</script>
+
+<main class="container m-auto flex w-full flex-col lg:w-1/2">
+	<Card>
+		<Form />
+	</Card>
+</main>
