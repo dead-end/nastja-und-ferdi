@@ -39,7 +39,11 @@
 		</Card>
 		<Card padding={false}>
 			<div class="bg-gradient relative h-[400px] overflow-hidden rounded-md">
-				<img class="absolute -top-80 rounded-md" src={mama} alt="Paar" />
+				<img
+					class="absolute -top-20 rounded-md sm:-top-40 md:-top-60 lg:-top-80"
+					src={mama}
+					alt="Paar"
+				/>
 				<div class="absolute inset-0 bg-gradient-to-t from-white to-50%"></div>
 				<div class="absolute inset-2 top-80 h-full text-center text-gray-900">
 					<div class="text-3xl font-extrabold">Unterkunft</div>
