@@ -20,10 +20,10 @@
 	<Checkbox id="not" name="part" label="Ich / wir können leider nicht kommen" />
 
 	<Legend label="Persönliche Daten" sub="(erforderlich)" />
-	<Input id="vorname" label="Vorname" type="text" />
-	<Input id="name" label="Name" type="text" />
-	<Input id="mail" label="E-Mail Adresse" type="email" />
-	<Input id="anzahl" label="Personenzahl" type="number" />
+	<Input id="vorname" label="Vorname" type="text" value="" />
+	<Input id="name" label="Name" type="text" value="" />
+	<Input id="mail" label="E-Mail Adresse" type="email" value="" />
+	<Input id="anzahl" label="Personenzahl" type="number" value="2" />
 
 	<div>
 		<button class="_button">Submit</button>

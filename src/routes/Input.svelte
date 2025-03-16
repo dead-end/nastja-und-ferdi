@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Label from './Label.svelte';
 
-	let { id, label, type } = $props();
+	let { id, label, type, value } = $props();
 </script>
 
 <div class="">
@@ -10,7 +10,7 @@
 		{type}
 		name={id}
 		{id}
-		autocomplete="family-name"
+		{value}
 		class="_transition _base _base-colors _outline-focus _outline px-3 py-1.5 text-base sm:text-sm/6"
 	/>
 </div>
