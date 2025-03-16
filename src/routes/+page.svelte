@@ -1,37 +1,49 @@
 <script lang="ts">
 	import Card from './Card.svelte';
 	import Form from './Form.svelte';
-
-	import img from '$lib/images/image.jpg';
 	import mama from '$lib/images/mama.jpg';
-	import ritter from '$lib/images/ritter.jpg';
 	import Location from './Location.svelte';
+	import nastja_ferdi from '$lib/images/image.jpg';
+	import ritter from '$lib/images/ritter.jpg';
 </script>
 
-<main class="bg-white text-gray-800 sm:bg-radial sm:from-blue-100 sm:from-40% sm:to-blue-400">
+<main
+	class="font-roboto bg-white text-gray-800 sm:bg-radial sm:from-blue-100 sm:from-40% sm:to-blue-400"
+>
 	<div class="container m-auto flex w-full flex-col justify-around gap-8 py-8 lg:w-1/2">
 		<Card padding={false}>
-			<div class="bg-gradient relative h-[400px] overflow-hidden rounded-md">
-				<img src={img} alt="Paar" class="rounded-md" />
-				<div class="absolute inset-0 bg-gradient-to-t from-white to-70%"></div>
-				<div class="absolute inset-2 top-80 h-full text-center text-gray-900">
-					<div class="text-3xl font-extrabold">Nastja & Ferdi</div>
-					<div class="text-lg">Wir haben uns getraut.</div>
-				</div>
+			<div class="h-[400px] overflow-hidden">
+				<img src={nastja_ferdi} alt="Paar" class="rounded-md" />
 			</div>
 			<div class="flex flex-col gap-4 p-4">
-				<h2 class="text-center text-lg font-semibold">Das muss gefeiert werden!</h2>
-
-				<div class="flex flex-col gap-4 p-8 md:flex-row md:justify-around">
-					<div>
-						<h4 class="pb-2 text-lg font-light text-gray-700">Wann?</h4>
-						<p>26.08.2025 17:00 Uhr</p>
-					</div>
-					<div>
-						<h4 class="pb-2 text-lg font-light text-gray-700">Wo?</h4>
-						<p>Renthof in Kassel</p>
-					</div>
+				<div class="flex flex-col items-center border-b border-gray-300 pt-2 pb-6">
+					<h4 class="text-6xl">Nastja</h4>
+					<h6 class="text-xl">&#x2665;&#xfe0f;</h6>
+					<h4 class="text-6xl">Ferdi</h4>
 				</div>
+				<div class="flex flex-col items-center gap-6">
+					<h4 class="text-2xl font-light">Save the date</h4>
+
+					<table class=" text-center">
+						<tbody>
+							<tr>
+								<td>&nbsp</td>
+								<td>Freitag</td>
+								<td>&nbsp</td>
+							</tr>
+							<tr>
+								<td class="px-2">29</td>
+								<td class="border-r border-l border-gray-300 px-2">08</td>
+								<td class="px-2">2025</td>
+							</tr></tbody
+						>
+					</table>
+
+					<p class="">Wir freuen uns, gemeinsam mit Euch im Renthof in Kassel zu feiern ❤️‍🔥</p>
+				</div>
+			</div>
+			<div class="h-[400px] overflow-hidden rounded-b-md">
+				<img src={ritter} alt="Paar" />
 			</div>
 		</Card>
 		<Card>
