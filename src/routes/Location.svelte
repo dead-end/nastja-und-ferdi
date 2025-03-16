@@ -2,7 +2,7 @@
 	import Maps from './Maps.svelte';
 </script>
 
-<div class="mb-6">
+<div class="mb-6 flex flex-col gap-4">
 	<h2 class="mb-4 text-2xl font-extrabold text-gray-900">Location</h2>
 
 	<div class="flex flex-col md:flex-row md:items-end md:justify-between">
@@ -28,5 +28,16 @@
 			</li>
 		</ul>
 	</div>
+	<div>
+		<a href="https://renthof-kassel.de/" target="_blank" class="_button">Location ansehen</a>
+	</div>
+	<p>
+		Der Renthof bietet unterschiedlicheZimmerkategorien an. Je nachdem, wie viele Gästinnen und
+		Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
+	</p>
+	<ul>
+		<li>Einzelzimmer ab 149 € inkl. Frühstück</li>
+		<li>Doppelzimmer ab 164 € inkl. Frühstück</li>
+	</ul>
 </div>
 <Maps />
