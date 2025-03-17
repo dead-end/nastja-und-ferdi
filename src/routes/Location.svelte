@@ -1,4 +1,5 @@
 <script>
+	// TODO:unused
 	import Maps from './Maps.svelte';
 </script>
 
@@ -31,13 +32,15 @@
 	<div>
 		<a href="https://renthof-kassel.de/" target="_blank" class="_button">Location ansehen</a>
 	</div>
-	<p>
-		Der Renthof bietet unterschiedlicheZimmerkategorien an. Je nachdem, wie viele Gästinnen und
-		Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
-	</p>
-	<ul>
-		<li>Einzelzimmer ab 149 € inkl. Frühstück</li>
-		<li>Doppelzimmer ab 164 € inkl. Frühstück</li>
-	</ul>
+	<div>
+		<p>
+			Der Renthof bietet unterschiedliche Zimmerkategorien an. Je nachdem, wie viele Gästinnen und
+			Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
+		</p>
+		<ul>
+			<li>Einzelzimmer ab 149 € inkl. Frühstück</li>
+			<li>Doppelzimmer ab 164 € inkl. Frühstück</li>
+		</ul>
+	</div>
 </div>
 <Maps />

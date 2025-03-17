@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Card from './Card.svelte';
 	import Form from './Form.svelte';
-	import mama from '$lib/images/mama.jpg';
-	import Location from './Location.svelte';
 	import nastja_ferdi from '$lib/images/image.jpg';
 	import ritter from '$lib/images/ritter.jpg';
+	import Hotel from './Hotel.svelte';
+	import Maps from './Maps.svelte';
 </script>
 
 <main
@@ -18,7 +18,7 @@
 			<div class="flex flex-col gap-4 p-4">
 				<div class="flex flex-col items-center border-b border-gray-300 pt-2 pb-6">
 					<h4 class="text-6xl">Nastja</h4>
-					<h6 class="text-xl">&#x2665;&#xfe0f;</h6>
+					<h6 class="text-4xl">&#x2665;&#xfe0e;</h6>
 					<h4 class="text-6xl">Ferdi</h4>
 				</div>
 				<div class="flex flex-col items-center gap-6">
@@ -42,47 +42,59 @@
 					<p class="">Wir freuen uns, gemeinsam mit Euch im Renthof in Kassel zu feiern ❤️‍🔥</p>
 				</div>
 			</div>
-			<div class="h-[400px] overflow-hidden rounded-b-md">
+			<div class="h-[400px] overflow-hidden">
 				<img src={ritter} alt="Paar" />
 			</div>
-		</Card>
-		<Card>
-			<Location />
-		</Card>
-		<Card padding={false}>
-			<div class="bg-gradient relative h-[400px] overflow-hidden rounded-md">
-				<img
-					class="absolute -top-20 rounded-md sm:-top-40 md:-top-60 lg:-top-80"
-					src={mama}
-					alt="Paar"
+
+			<div class="flex flex-col gap-8 px-8 py-8">
+				<h2 class="text-2xl font-extrabold text-gray-900">Location</h2>
+				<Hotel
+					name="Renthof GmbH"
+					anschrift="Renthof 3"
+					stadt="34117 Kassel Deutschland"
+					telefon="+49 561 50668 0"
+					email="info@renthof-kassel.de"
+					url="https://renthof-kassel.de/"
+				>
+					<div>
+						<h4 class="pb-2 font-semibold">Informationen</h4>
+						<p class="pb-4">
+							Der Renthof bietet unterschiedliche Zimmerkategorien an. Je nachdem, wie viele
+							Gästinnen und Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
+						</p>
+						<ul>
+							<li class="pb-1 pl-2">Einzelzimmer ab 149 € inkl. Frühstück</li>
+							<li class="pl-2">Doppelzimmer ab 164 € inkl. Frühstück</li>
+						</ul>
+					</div>
+				</Hotel>
+				<Maps />
+				<p>In der Umgebung gibt es zudem unter anderem</p>
+
+				<Hotel
+					name="Hotel Schweizer Hof"
+					anschrift="Wilhelmshöher Allee 288"
+					stadt="34131 Kassel Deutschland"
+					telefon="+49 (0) 561 936 90"
+					email="info@hotel-schweizerhof-kassel.de"
+					url="https://www.hotel-schweizerhof-kassel.de"
 				/>
-				<div class="absolute inset-0 bg-gradient-to-t from-white to-50%"></div>
-				<div class="absolute inset-2 top-80 h-full text-center text-gray-900">
-					<div class="text-3xl font-extrabold">Unterkunft</div>
-					<div class="text-lg font-bold">Gemütlich übernachten.</div>
-				</div>
+
+				<p>oder</p>
+				<Hotel
+					name="Hotel Am Sonnenhang"
+					anschrift="Aspenstraße 6 / Am Sonnenhang 4"
+					stadt="34128 Kassel Deutschland"
+					telefon="+49 561 96988-0"
+					email="info@amsonnenhang.net"
+					url="https://www.amsonnenhang.net"
+				/>
+
+				<div>Teilt uns bitte bis zum 13. April mit, ob ihr im Renthof übernachten möchtet.</div>
+
+				<Form />
+				<div>Wir freuen uns 🪩</div>
 			</div>
-			<div class="flex flex-col gap-4 p-8">
-				<div>Das Hotel Landhaus am See bietet eine Vielzahl an Zimmern.</div>
-				<ul>
-					<li>Einzelzimmer ab 80 € inkl. Frühstück</li>
-					<li>Doppelzimmer ab 180 € inkl. Frühstück</li>
-				</ul>
-				<div>
-					Fußläufig gibt es zudem die Pension Garbsen, das Hotel Café Galerie, das Löns Hotel und
-					das Hotel Shelby Apartments. Im Umkreis gibt es weitere Hotels und einen Campingplatz, für
-					die Abenteurer unter Euch ;-) Wir haben auch die Möglichkeit, einige von Euch in Hannover
-					unterzubringen. Gebt uns gerne Bescheid.
-				</div>
-				<div>
-					Um die Zimmer für das Hotel Landhaus am See zu reservieren, benötigen wir von Euch zeitnah
-					eine Rückmeldung, ob ihr in der Hochzeitslocation übernachten wollt oder eine andere
-					Übernachtungsmöglichkeit bevorzugt.
-				</div>
-			</div>
-		</Card>
-		<Card>
-			<Form />
 		</Card>
 	</div>
 </main>

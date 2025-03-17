@@ -6,25 +6,30 @@
 	let name = $state('');
 	let surname = $state('');
 	let email = $state('');
-	let num = $state(2);
+	let person = $state(2);
+	let children = $state(0);
 
 	let part = $state('party');
 	let error = $state('');
 
-	const personen = (num: number) => {
-		if (num === 1) {
+	const personen = (personen: number, kinder: number) => {
+		if (personen === 1 && kinder === 0) {
 			return 'Ich komme alleine';
 		}
-		return `Wir kommen mit ${num} Personen`;
+		return `Wir kommen mit ${personen} Erwachsenen und ${kinder} Kindern`;
 	};
 
 	// @ts-ignore
 	const onsubmit = (e) => {
 		e.preventDefault();
-		console.log(surname, name, email, num);
+		console.log(surname, name, email, person, children);
 
-		if (num < 0 || num > 20) {
+		if (person < 0 || person > 20) {
 			error = 'Bitte geben Sie die Anzahl der Personen an.';
+			return;
+		}
+		if (children < 0 || children > 20) {
+			error = 'Bitte geben Sie die Anzahl der Kinder an.';
 			return;
 		}
 		error = '';
@@ -38,12 +43,12 @@
 			subject += `Ich komme nicht - ${name}`;
 			body += 'Ich kann leider nicht kommen.';
 		} else if (part === 'party') {
-			subject += `Party: ${num} - ${name}`;
-			body += personen(num);
+			subject += `Party - Personen ${person} Kinder: ${children} - ${name}`;
+			body += personen(person, children);
 			body += ' und und kümmere mich selbst um die Unterkunft.';
 		} else {
-			subject += `Übernachtung: ${num} - ${name}`;
-			body += personen(num);
+			subject += `Übernachtung - Personen: ${person} Kinder: ${children} - ${name}`;
+			body += personen(person, children);
 			body += ' und beötigen eine Übernachtung.';
 		}
 
@@ -84,11 +89,12 @@
 	<Input id="vorname" label="Vorname" type="text" bind:value={surname} />
 	<Input id="name" label="Name" type="text" bind:value={name} />
 	<Input id="email" label="E-Mail Adresse" type="email" bind:value={email} />
-	<Input id="anzahl" label="Personenzahl" type="number" bind:value={num} />
+	<Input id="personen" label="Anzahl Erwachsene" type="number" bind:value={person} />
+	<Input id="kinder" label="Anzahl Kinder" type="number" bind:value={children} />
 	{#if error}
 		<p class="text-red-700">{error}</p>
 	{/if}
 	<div>
-		<button class="_button" {onsubmit}>Submit</button>
+		<button class="_button" {onsubmit}>Absenden</button>
 	</div>
 </form>
