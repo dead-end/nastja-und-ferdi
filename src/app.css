@@ -6,10 +6,15 @@
 
 @theme {
 	--font-roboto: 'Big Shoulders', sans-serif;
+	--text-base: 1.2rem;
 }
 
 @layer components {
 	._button {
 		@apply rounded bg-blue-600 px-4 py-2 text-sm font-bold text-white shadow transition duration-200 ease-in-out hover:bg-blue-700 disabled:bg-gray-400;
+	}
+
+	._link {
+		@apply text-blue-600 underline transition duration-200 ease-in-out hover:text-blue-700;
 	}
 }

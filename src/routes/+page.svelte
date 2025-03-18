@@ -2,13 +2,13 @@
 	import Card from './Card.svelte';
 	import Form from './Form.svelte';
 	import nastja_ferdi from '$lib/images/image.jpg';
-	import ritter from '$lib/images/ritter.jpg';
+	import mama from '$lib/images/mama.jpg';
 	import Hotel from './Hotel.svelte';
-	import Maps from './Maps.svelte';
+	import nastja from '$lib/images/nastja.jpg';
 </script>
 
 <main
-	class="font-roboto bg-white text-gray-800 sm:bg-radial sm:from-blue-100 sm:from-40% sm:to-blue-400"
+	class="font-roboto bg-white text-base text-gray-800 sm:bg-radial sm:from-blue-100 sm:from-40% sm:to-blue-400"
 >
 	<div class="container m-auto flex w-full flex-col justify-around gap-8 py-8 lg:w-1/2">
 		<Card padding={false}>
@@ -22,19 +22,19 @@
 					<h4 class="text-6xl">Ferdi</h4>
 				</div>
 				<div class="flex flex-col items-center gap-6">
-					<h4 class="text-2xl font-light">Save the date</h4>
+					<h4 class="text-4xl font-bold">Save the date</h4>
 
 					<table class=" text-center">
 						<tbody>
 							<tr>
 								<td>&nbsp</td>
-								<td>Freitag</td>
+								<td class="text-xl">Freitag</td>
 								<td>&nbsp</td>
 							</tr>
 							<tr>
-								<td class="px-2">29</td>
-								<td class="border-r border-l border-gray-300 px-2">08</td>
-								<td class="px-2">2025</td>
+								<td class="px-2 text-xl">29</td>
+								<td class="border-r border-l border-gray-300 px-2 text-xl">08</td>
+								<td class="px-2 text-xl">2025</td>
 							</tr></tbody
 						>
 					</table>
@@ -42,12 +42,12 @@
 					<p class="">Wir freuen uns, gemeinsam mit Euch im Renthof in Kassel zu feiern ❤️‍🔥</p>
 				</div>
 			</div>
-			<div class="h-[400px] overflow-hidden">
-				<img src={ritter} alt="Paar" />
+			<div class="h-[500px] overflow-hidden">
+				<img src={mama} alt="Paar" />
 			</div>
 
 			<div class="flex flex-col gap-8 px-8 py-8">
-				<h2 class="text-2xl font-extrabold text-gray-900">Location</h2>
+				<h2 class="text-2xl font-extrabold text-gray-900">Übernachtung</h2>
 				<Hotel
 					name="Renthof GmbH"
 					anschrift="Renthof 3"
@@ -55,45 +55,56 @@
 					telefon="+49 561 50668 0"
 					email="info@renthof-kassel.de"
 					url="https://renthof-kassel.de/"
-				>
-					<div>
-						<h4 class="pb-2 font-semibold">Informationen</h4>
-						<p class="pb-4">
-							Der Renthof bietet unterschiedliche Zimmerkategorien an. Je nachdem, wie viele
-							Gästinnen und Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
-						</p>
-						<ul>
-							<li class="pb-1 pl-2">Einzelzimmer ab 149 € inkl. Frühstück</li>
-							<li class="pl-2">Doppelzimmer ab 164 € inkl. Frühstück</li>
-						</ul>
-					</div>
-				</Hotel>
-				<Maps />
-				<p>In der Umgebung gibt es zudem unter anderem</p>
-
-				<Hotel
-					name="Hotel Schweizer Hof"
-					anschrift="Wilhelmshöher Allee 288"
-					stadt="34131 Kassel Deutschland"
-					telefon="+49 (0) 561 936 90"
-					email="info@hotel-schweizerhof-kassel.de"
-					url="https://www.hotel-schweizerhof-kassel.de"
+					maps="https://maps.app.goo.gl/Y2qgEehHAkA7Jh9y8"
 				/>
+				<div class="flex flex-col gap-4">
+					<p>
+						Der Renthof bietet unterschiedliche Zimmerkategorien an. Je nachdem, wie viele Gästinnen
+						und Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
+					</p>
+					<ul>
+						<li class="pb-1 pl-2">Einzelzimmer ab 149 € inkl. Frühstück</li>
+						<li class="pl-2">Doppelzimmer ab 164 € inkl. Frühstück</li>
+					</ul>
 
-				<p>oder</p>
-				<Hotel
-					name="Hotel Am Sonnenhang"
-					anschrift="Aspenstraße 6 / Am Sonnenhang 4"
-					stadt="34128 Kassel Deutschland"
-					telefon="+49 561 96988-0"
-					email="info@amsonnenhang.net"
-					url="https://www.amsonnenhang.net"
-				/>
+					<p>In der Umgebung gibt es zudem unter anderem folgende Hotels:</p>
+					<ul>
+						<li class="py-1 pl-2">
+							<a target="_blank" class="_link" href="https://www.hotel-schweizerhof-kassel.de"
+								>Hotel Schweizer Hof</a
+							>
+						</li>
+						<li class="py-1 pl-2">
+							<a target="_blank" class="_link" href="https://www.amsonnenhang.net"
+								>Hotel am Sonnenhang</a
+							>
+						</li>
 
-				<div>Teilt uns bitte bis zum 13. April mit, ob ihr im Renthof übernachten möchtet.</div>
+						<li class="py-1 pl-2">
+							<a target="_blank" class="_link" href="https://stadthotel-kassel.de/"
+								>Stadthotel Kassel</a
+							>
+						</li>
+						<li class="py-1 pl-2">
+							<a target="_blank" class="_link" href="https://hotelamrathauskassel.de/"
+								>Hotel am Rathaus</a
+							>
+						</li>
+						<li class="py-1 pl-2">
+							<a target="_blank" class="_link" href="https://www.hotel-bb.com">B&B Hotel Kassel</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="text-lg font-bold">
+					Teilt uns bitte bis zum 13. April mit, ob ihr im Renthof übernachten möchtet.
+				</div>
 
 				<Form />
-				<div>Wir freuen uns 🪩</div>
+				<div>
+					Wir freuen uns 🪩 Wir starten um 17 Uhr mit einem Sektempfang und kleinen Snacks. Es folgt
+					das Abendessen und danach wird das Tanzbein geschwungen!
+				</div>
 			</div>
 		</Card>
 	</div>
