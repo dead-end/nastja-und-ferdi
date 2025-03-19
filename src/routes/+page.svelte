@@ -18,7 +18,7 @@
 			<div class="flex flex-col gap-4 p-4">
 				<div class="mb-2 flex flex-col items-center border-b border-gray-300 pt-2 pb-6">
 					<h4 class="text-6xl">Nastja</h4>
-					<h6 class="text-4xl">&#x2665;&#xfe0e;</h6>
+					<h6 class="text-2xl">&#x2764;&#xfe0f;</h6>
 					<h4 class="text-6xl">Ferdi</h4>
 				</div>
 				<div class="flex flex-col items-center gap-6">
@@ -97,7 +97,7 @@
 
 				<Form />
 				<p>Wir freuen uns auf die gemeinsame Zeit mit euch 🪩</p>
-				<div>
+				<div class="">
 					<button class="_button-1">Variante 1</button>
 					<button class="_button-2">Variante 2</button>
 					<button class="_button-3">Variante 3</button>

@@ -27,7 +27,7 @@
 	}
 
 	._button-3 {
-		@apply rounded bg-sky-950 px-4 py-2 font-bold text-white shadow transition duration-200 ease-in-out hover:bg-sky-900 disabled:bg-gray-400;
+		@apply rounded bg-sky-800 px-4 py-2 font-bold text-white shadow transition duration-200 ease-in-out hover:bg-sky-900 disabled:bg-gray-400;
 	}
 
 	._button-4 {
