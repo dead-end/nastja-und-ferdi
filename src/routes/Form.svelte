@@ -60,9 +60,8 @@
 	};
 </script>
 
-<form class="flex flex-col gap-4" {onsubmit}>
-	<Legend label="Wir / Ich" sub="(erforderlich)" />
-
+<form class="flex flex-col gap-5" {onsubmit}>
+	<div class="font-semibold">Erforderlich</div>
 	<Checkbox
 		id="location"
 		name="part"
@@ -85,7 +84,7 @@
 		label="Ich / wir können leider nicht kommen"
 	/>
 
-	<Legend label="Persönliche Daten" sub="(erforderlich)" />
+	<div class="font-semibold">Erforderlich</div>
 	<Input id="vorname" label="Vorname" type="text" bind:value={surname} />
 	<Input id="name" label="Name" type="text" bind:value={name} />
 	<Input id="email" label="E-Mail Adresse" type="email" bind:value={email} />
