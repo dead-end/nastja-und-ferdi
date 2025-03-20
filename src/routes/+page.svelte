@@ -41,7 +41,7 @@
 					<p class="">Wir freuen uns, gemeinsam mit Euch im Renthof in Kassel zu feiern ❤️‍🔥</p>
 					<p class="text-center">
 						Um 17:00 Uhr starten wir mit einem Sektempfang und kleinen Snacks. Es folgt das
-						Abendessen und danach wird das Tanzbein geschwungen.
+						Abendessen und danach wird das Tanzbein geschwungen!
 					</p>
 				</div>
 			</div>
@@ -94,7 +94,7 @@
 				</div>
 				<h2 class="text-2xl font-extrabold text-gray-900">Rückmeldung</h2>
 				<div class="text-lg font-bold">
-					Teilt uns bitte bis zum 13. April mit, ob ihr im Renthof übernachten möchtet.
+					Teile uns bitte bis zum 13. April mit, ob du im Renthof übernachten möchtest.
 				</div>
 
 				<Form />
