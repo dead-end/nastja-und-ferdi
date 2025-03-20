@@ -12,7 +12,7 @@
 		{id}
 		bind:value
 		required
-		class="_transition _base _base-colors _outline-focus _outline px-3 py-1.5 text-base sm:text-sm/6"
+		class="_ring _transition _base _base-colors _outline-focus _outline px-3 py-1.5 text-base sm:text-sm/6"
 	/>
 </div>
 
@@ -36,6 +36,9 @@
 	}
 
 	._outline-focus {
-		@apply focus:outline-1 focus:-outline-offset-1 focus:outline-blue-600;
+		@apply focus:outline-1 focus:-outline-offset-1 focus:outline-gray-800;
+	}
+	._ring {
+		@apply ring-gray-800 focus:ring-gray-800 focus-visible:ring-gray-800;
 	}
 </style>

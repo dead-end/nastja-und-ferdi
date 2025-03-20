@@ -3,9 +3,8 @@
 </script>
 
 <div class="rounded-md border border-gray-300 px-4 py-6">
-	<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+	<div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
 		<ul class="flex flex-col gap-1">
-			<li class="text-lg font-bold">{name}</li>
 			<li>{anschrift}</li>
 			<li>{stadt}</li>
 		</ul>

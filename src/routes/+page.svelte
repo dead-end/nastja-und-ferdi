@@ -2,9 +2,7 @@
 	import Card from './Card.svelte';
 	import Form from './Form.svelte';
 	import nastja_ferdi from '$lib/images/image.jpg';
-	import mama from '$lib/images/mama.jpg';
 	import Hotel from './Hotel.svelte';
-	import nastja from '$lib/images/nastja.jpg';
 </script>
 
 <main
@@ -41,7 +39,10 @@
 					</table>
 
 					<p class="">Wir freuen uns, gemeinsam mit Euch im Renthof in Kassel zu feiern ❤️‍🔥</p>
-					<p class="">Um 17:00 Uhr starten wir mit einem Sektempfang.</p>
+					<p class="text-center">
+						Um 17:00 Uhr starten wir mit einem Sektempfang und kleinen Snacks. Es folgt das
+						Abendessen und danach wird das Tanzbein geschwungen.
+					</p>
 				</div>
 			</div>
 
@@ -59,8 +60,9 @@
 				<h2 class="text-2xl font-extrabold text-gray-900">Übernachtung</h2>
 				<div class="flex flex-col gap-4">
 					<p>
-						Der Renthof bietet unterschiedliche Zimmerkategorien an. Je nachdem, wie viele Gästinnen
-						und Gäste dort übernachten, kann es zu einer kleinen Vergünstigung kommen.
+						Solltest du eine Übernachtungsmöglichkeit benötigen, biete der Renthof unterschiedliche
+						Zimmerkategorien an. Je nachdem, wie viele Gästinnen und Gäste dort übernachten, kann es
+						zu einer kleinen Vergünstigung kommen.
 					</p>
 					<ul class="pb-1">
 						<li>Einzelzimmer ab 149 € inkl. Frühstück</li>
@@ -90,19 +92,13 @@
 						</li>
 					</ul>
 				</div>
-
+				<h2 class="text-2xl font-extrabold text-gray-900">Rückmeldung</h2>
 				<div class="text-lg font-bold">
 					Teilt uns bitte bis zum 13. April mit, ob ihr im Renthof übernachten möchtet.
 				</div>
 
 				<Form />
-				<p>Wir freuen uns auf die gemeinsame Zeit mit euch 🪩</p>
-				<div class="">
-					<button class="_button-1">Variante 1</button>
-					<button class="_button-2">Variante 2</button>
-					<button class="_button-3">Variante 3</button>
-					<button class="_button-4">Variante 4</button>
-				</div>
+				<p class="text-center">Wir freuen uns auf die gemeinsame Zeit mit euch 🪩</p>
 			</div>
 		</Card>
 	</div>
