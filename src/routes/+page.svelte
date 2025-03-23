@@ -69,12 +69,16 @@
 
 					<p>
 						Je nachdem, wie viele Gästinnen und Gäste dort übernachten, kann es zu einer kleinen
-						Vergünstigung kommen. Bitte bucht eure Zimmer bis spätestens <span class="bg-yellow-300"
-							>xx.xx</span
-						>. Reservierungnen sind direkt im Renthof unter
+						Vergünstigung kommen.
+					</p>
+					<p class="text-center font-bold">
+						Bitte bucht eure Zimmer bis spätestens <span class="bg-yellow-300">xx.xx</span>.
+					</p>
+					<p>
+						Reservierungnen sind direkt im Renthof unter
 						<span class="_link">events@renthof-kassel.de</span>
 						mit dem Betreff
-						<span class="text-blue-800">Nastja & Ferdi29.08.2025</span> möglich
+						<span class="text-blue-800">Nastja & Ferdi 29.08.2025</span> möglich.
 					</p>
 
 					<p>In der Umgebung gibt es zudem unter anderem folgende Hotels:</p>
