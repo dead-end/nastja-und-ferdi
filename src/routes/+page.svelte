@@ -72,7 +72,7 @@
 						Vergünstigung kommen.
 					</p>
 					<p class="font-bold">
-						Bitte bucht eure Zimmer bis spätestens<span class="bg-yellow-300">xx.xx</span>.
+						Bitte bucht eure Zimmer bis spätestens <span class="bg-yellow-300">xx.xx</span>.
 					</p>
 					<p>
 						Reservierungnen sind direkt im Renthof unter
