@@ -71,8 +71,8 @@
 						Je nachdem, wie viele Gästinnen und Gäste dort übernachten, kann es zu einer kleinen
 						Vergünstigung kommen.
 					</p>
-					<p class="text-center font-bold">
-						Bitte bucht eure Zimmer bis spätestens <span class="bg-yellow-300">xx.xx</span>.
+					<p class="font-bold">
+						Bitte bucht eure Zimmer bis spätestens<span class="bg-yellow-300">xx.xx</span>.
 					</p>
 					<p>
 						Reservierungnen sind direkt im Renthof unter
