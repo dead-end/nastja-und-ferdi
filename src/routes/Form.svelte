@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Checkbox from './Checkbox.svelte';
 	import Input from './Input.svelte';
-	import Legend from './Legend.svelte';
 
 	let name = $state('');
 	let surname = $state('');
@@ -12,11 +11,15 @@
 	let part = $state('party');
 	let error = $state('');
 
-	const personen = (personen: number, kinder: number) => {
+	const doText = (personen: number, kinder: number) => {
 		if (personen === 1 && kinder === 0) {
 			return 'Ich komme alleine';
 		}
 		return `Wir kommen mit ${personen} Erwachsenen und ${kinder} Kindern`;
+	};
+
+	const doSubject = (personen: number, kinder: number, name: string) => {
+		return `${doText(personen, kinder)} - ${name}`;
 	};
 
 	// @ts-ignore
@@ -42,14 +45,9 @@
 		if (part === 'not') {
 			subject += `Ich komme nicht - ${name}`;
 			body += 'Ich kann leider nicht kommen.';
-		} else if (part === 'party') {
-			subject += `Party - Personen ${person} Kinder: ${children} - ${name}`;
-			body += personen(person, children);
-			body += ' und und kümmere mich selbst um die Unterkunft.';
 		} else {
-			subject += `Übernachtung - Personen: ${person} Kinder: ${children} - ${name}`;
-			body += personen(person, children);
-			body += ' und beötigen eine Übernachtung.';
+			subject += doSubject(person, children, name);
+			body += doText(person, children);
 		}
 
 		body += `\nLiebe Grüße,\n${surname} ${name}`;
@@ -65,15 +63,8 @@
 		id="location"
 		name="part"
 		value="party"
-		label="Ich / wir kommen gerne und möchten in der Hochzeitslocation übernachten"
+		label="Ich / wir kommen gerne"
 		bind:group={part}
-	/>
-	<Checkbox
-		id="other"
-		name="part"
-		value="sleep"
-		bind:group={part}
-		label="Ich / wir kommen gerne und übernachten woanders oder fahren wieder nach Hause"
 	/>
 	<Checkbox
 		id="not"

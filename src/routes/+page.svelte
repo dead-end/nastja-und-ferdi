@@ -5,9 +5,7 @@
 	import Hotel from './Hotel.svelte';
 </script>
 
-<main
-	class="font-roboto bg-white text-base text-gray-800 sm:bg-radial sm:from-blue-100 sm:from-40% sm:to-blue-400"
->
+<main class="font-roboto _bg bg-white text-base text-gray-800 sm:bg-radial sm:from-40%">
 	<div class="container m-auto flex w-full flex-col justify-around gap-8 py-8 lg:w-1/2">
 		<Card padding={false}>
 			<div class="h-[400px] overflow-hidden">
@@ -20,7 +18,9 @@
 					<h4 class="text-6xl">Ferdi</h4>
 				</div>
 				<div class="flex flex-col items-center gap-6">
-					<h4 class="text-4xl font-bold">Save the date</h4>
+					<h4 class="text-center text-4xl font-bold">
+						Wir haben geheiratet und möchten mit euch feiern ❤️‍🔥
+					</h4>
 
 					<table class=" text-center">
 						<tbody>
@@ -38,10 +38,9 @@
 						>
 					</table>
 
-					<p class="">Wir freuen uns, gemeinsam mit Euch im Renthof in Kassel zu feiern ❤️‍🔥</p>
 					<p class="text-center">
-						Um 17:00 Uhr starten wir mit einem Sektempfang und kleinen Snacks. Es folgt das
-						Abendessen und danach wird das Tanzbein geschwungen!
+						Um 17:00 Uhr starten wir im Renthof Kassel mit einem Sektempfang und kleinen Snacks. Es
+						folgt das Abendessen und danach wird das Tanzbein geschwungen!
 					</p>
 				</div>
 			</div>
@@ -60,14 +59,23 @@
 				<h2 class="text-2xl font-extrabold text-gray-900">Übernachtung</h2>
 				<div class="flex flex-col gap-4">
 					<p>
-						Solltest du eine Übernachtungsmöglichkeit benötigen, biete der Renthof unterschiedliche
-						Zimmerkategorien an. Je nachdem, wie viele Gästinnen und Gäste dort übernachten, kann es
-						zu einer kleinen Vergünstigung kommen.
+						Solltet ihr eine Übernachtungsmöglichkeit benötigen, haben wir im Renthof ein
+						Zimmerkontingent reserviert.
 					</p>
 					<ul class="pb-1">
 						<li>Einzelzimmer ab 149 € inkl. Frühstück</li>
 						<li>Doppelzimmer ab 164 € inkl. Frühstück</li>
 					</ul>
+
+					<p>
+						Je nachdem, wie viele Gästinnen und Gäste dort übernachten, kann es zu einer kleinen
+						Vergünstigung kommen. Bitte bucht eure Zimmer bis spätestens <span class="bg-yellow-300"
+							>xx.xx</span
+						>. Reservierungnen sind direkt im Renthof unter
+						<span class="_link">events@renthof-kassel.de</span>
+						mit dem Betreff
+						<span class="text-blue-800">Nastja & Ferdi29.08.2025</span> möglich
+					</p>
 
 					<p>In der Umgebung gibt es zudem unter anderem folgende Hotels:</p>
 					<ul>
@@ -94,11 +102,11 @@
 				</div>
 				<h2 class="text-2xl font-extrabold text-gray-900">Rückmeldung</h2>
 				<div class="text-lg font-bold">
-					Teile uns bitte bis zum 13. April mit, ob du im Renthof übernachten möchtest.
+					Teilt uns bitte bis zum 30. April mit, ob Ihr mit uns feiert.
 				</div>
 
 				<Form />
-				<p class="text-center">Wir freuen uns auf die gemeinsame Zeit mit euch 🪩</p>
+				<p class="text-center">Wir freuen uns auf die gemeinsame Zeit mit Euch 🪩</p>
 			</div>
 		</Card>
 	</div>
