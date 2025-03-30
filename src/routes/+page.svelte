@@ -3,6 +3,10 @@
 	import Form from './Form.svelte';
 	import nastja_ferdi from '$lib/images/image.jpg';
 	import Hotel from './Hotel.svelte';
+
+	const reservationMail = 'reservation@renthof-kassel.de';
+	const reservationSub = 'Nastja & Ferdi 29.08.2025';
+	const resevationMailto = `mailto:${reservationMail}?subject=${encodeURIComponent(reservationSub)}`;
 </script>
 
 <main class="font-roboto _bg bg-white text-base text-gray-800 sm:bg-radial sm:from-40%">
@@ -72,15 +76,14 @@
 						Vergünstigung kommen.
 					</p>
 					<p class="text-center font-bold">
-						Um auf das Zimmerkontingent zurückzugreifen, bucht bitte Eure Zimmer bis spätestens <span
-							class="bg-yellow-300">xx.xx</span
-						>.
+						Um auf das Zimmerkontingent zurückzugreifen, bucht bitte Eure Zimmer bis spätestens 08.
+						Juni.
 					</p>
 					<p>
 						Reservierungnen sind direkt im Renthof unter
-						<span class="_link">events@renthof-kassel.de</span>
+						<a href={resevationMailto} class="_link">{reservationMail}</a>
 						mit dem Betreff
-						<span class="text-blue-800">Nastja & Ferdi 29.08.2025</span> möglich.
+						<span class="text-blue-800">{reservationSub}</span> möglich.
 					</p>
 
 					<p>In der Umgebung gibt es zudem unter anderem folgende Hotels:</p>
