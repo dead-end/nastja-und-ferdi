@@ -7,6 +7,9 @@
 	const reservationMail = 'reservation@renthof-kassel.de';
 	const reservationSub = 'Nastja & Ferdi 29.08.2025';
 	const resevationMailto = `mailto:${reservationMail}?subject=${encodeURIComponent(reservationSub)}`;
+
+	const bene = ['bene', 'diktbloch', '@', 'goo', 'glema', 'il.com'];
+	const ghazaleh = ['ghaz', 'alehbeni', '@y', 'aho', 'o.de'];
 </script>
 
 <main class="font-roboto _bg bg-white text-base text-gray-800 sm:bg-radial sm:from-40%">
@@ -23,7 +26,7 @@
 				</div>
 				<div class="flex flex-col items-center gap-6">
 					<h4 class="text-center text-4xl font-bold">
-						Wir haben geheiratet und möchten mit euch feiern ❤️‍🔥
+						Wir haben geheiratet und möchten mit Euch feiern ❤️‍🔥
 					</h4>
 
 					<table class=" text-center">
@@ -63,7 +66,7 @@
 				<h2 class="text-2xl font-extrabold text-gray-900">Übernachtung</h2>
 				<div class="flex flex-col gap-4">
 					<p>
-						Solltet ihr eine Übernachtungsmöglichkeit benötigen, haben wir im Renthof ein
+						Solltet Ihr eine Übernachtungsmöglichkeit benötigen, haben wir im Renthof ein
 						Zimmerkontingent reserviert.
 					</p>
 					<ul class="pb-1">
@@ -115,6 +118,13 @@
 				</div>
 
 				<Form />
+				<p>
+					Wenn Ihr Fragen habt, meldet Euch gerne bei unseren Trauzeug:innen Bene und Ghazaleh per
+					Mail
+					<a href={'mailto:' + bene.join('')} class="_link">{bene.join('')}</a>
+					und
+					<a href={'mailto:' + ghazaleh.join('')} class="_link">{ghazaleh.join('')}</a>
+				</p>
 				<p class="text-center">Wir freuen uns auf die gemeinsame Zeit mit Euch 🪩</p>
 			</div>
 		</Card>
