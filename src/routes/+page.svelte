@@ -8,6 +8,7 @@
 	const reservationSub = 'Nastja & Ferdi 29.08.2025';
 	const resevationMailto = `mailto:${reservationMail}?subject=${encodeURIComponent(reservationSub)}`;
 
+	const nastja = ['kryl', 'ova', '@gm', ' x.', 'de'];
 	const bene = ['bene', 'diktbloch', '@', 'goo', 'glema', 'il.com'];
 	const ghazaleh = ['ghaz', 'alehbeni', '@y', 'aho', 'o.de'];
 </script>
@@ -118,6 +119,10 @@
 				</div>
 
 				<Form />
+				<p>
+					Sollte das Absenden nicht klappen, schickt uns gerne eine Nachricht per Mail an
+					<a href={'mailto:' + nastja.join('')} class="_link">{nastja.join('')}</a>
+				</p>
 				<p>
 					Wenn Ihr Fragen habt, meldet Euch gerne bei unseren Trauzeug:innen Bene und Ghazaleh per
 					Mail
