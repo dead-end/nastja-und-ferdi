@@ -5,7 +5,7 @@
 	let name = $state('');
 	let surname = $state('');
 	let email = $state('');
-	let person = $state(2);
+	let person = $state(0);
 	let children = $state(0);
 
 	let part = $state('party');
