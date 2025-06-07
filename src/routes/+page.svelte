@@ -81,7 +81,7 @@
 					</p>
 					<p class="text-center font-bold">
 						Um auf das Zimmerkontingent zurückzugreifen, bucht bitte Eure Zimmer spätestens bis zum
-						08. Juni.
+						18. Juni.
 					</p>
 					<p>
 						Reservierungnen sind direkt im Renthof unter
@@ -115,7 +115,7 @@
 				</div>
 				<h2 class="text-2xl font-extrabold text-gray-900">Rückmeldung</h2>
 				<div class="text-lg font-bold">
-					Teilt uns bitte bis zum 31. Mai mit, ob Ihr mit uns feiert.
+					Teilt uns bitte bis zum 30. Juni mit, ob Ihr mit uns feiert.
 				</div>
 
 				<Form />
